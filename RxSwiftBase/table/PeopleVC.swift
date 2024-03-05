@@ -31,11 +31,11 @@ class PeopleVC: UIViewController {
             }.disposed(by: disposeBag)
         
         myTable.rx.modelSelected(People.self).subscribe { people in
-            print("选择了\(people.element?.name)")
+            print("选择了\(people.element!.name)")
         }.disposed(by: disposeBag)
         
         myTable.rx.itemSelected.subscribe { indexPath in
-            print("选择了\(indexPath.element?.row)")
+            print("选择了\(indexPath.element!.row)")
         }.disposed(by: disposeBag)
         
     }
