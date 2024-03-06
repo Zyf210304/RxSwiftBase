@@ -33,7 +33,7 @@ class TransformingVC: BaseViewController {
 //                next(["A"])
 //                next([])
             }
-            .disposed(by: disposeBg)
+            .disposed(by: disposeBag)
         
         subject.onNext("1")
         subject.onNext("2")
@@ -58,9 +58,9 @@ class TransformingVC: BaseViewController {
                 print("subscribe:\($0)")
                 $0.asObservable()
                     .subscribe(onNext: { print($0) })
-                    .disposed(by: self!.disposeBg)
+                    .disposed(by: self!.disposeBag)
             }
-            .disposed(by: disposeBg)
+            .disposed(by: disposeBag)
         
         subject.onNext("a")
         subject.onNext("b")

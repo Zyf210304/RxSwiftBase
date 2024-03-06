@@ -27,7 +27,7 @@ class SubjectsVC: BaseViewController {
             print(error)
         } onCompleted: {
             print("第一次 completed")
-        }.disposed(by: disposeBg)
+        }.disposed(by: disposeBag)
         
         subject.onNext("1111")
         
@@ -37,7 +37,7 @@ class SubjectsVC: BaseViewController {
             print(error)
         } onCompleted: {
             print("第二次 completed")
-        }.disposed(by: disposeBg)
+        }.disposed(by: disposeBag)
         
         subject.onNext("2222")
         subject.onCompleted()
@@ -49,7 +49,7 @@ class SubjectsVC: BaseViewController {
             print(error)
         } onCompleted: {
             print("第三次 completed")
-        }.disposed(by: disposeBg)
+        }.disposed(by: disposeBag)
         subject.onNext("4444")
         
         subject.onCompleted()
@@ -68,7 +68,7 @@ class SubjectsVC: BaseViewController {
         subject2.onNext(000)
         subject2.subscribe { event in
             print("BehaviorSubject 第一次订阅", event)
-        }.disposed(by: disposeBg)
+        }.disposed(by: disposeBag)
         
         subject2.onNext(222)
         subject2.onNext(333)
@@ -77,7 +77,7 @@ class SubjectsVC: BaseViewController {
         subject2.subscribe{ event in
             print("BehaviorSubject 第二次订阅", event)
         }
-        .disposed(by: disposeBg)
+        .disposed(by: disposeBag)
 //        BehaviorSubject 第一次订阅 next(0)
 //        BehaviorSubject 第一次订阅 next(222)
 //        BehaviorSubject 第一次订阅 next(333)
@@ -92,20 +92,20 @@ class SubjectsVC: BaseViewController {
         subject3.subscribe { event in
             print("第一次订阅", event)
         }
-        .disposed(by: disposeBg)
+        .disposed(by: disposeBag)
         subject3.onNext("4444")
         
         
         subject3.subscribe { event in
             print("第二次订阅", event)
         }
-        .disposed(by: disposeBg)
+        .disposed(by: disposeBag)
         
         subject3.onCompleted()
         subject3.subscribe { event in
             print("第三次订阅", event)
         }
-        .disposed(by: disposeBg)
+        .disposed(by: disposeBag)
 //        第一次订阅 next(2222)
 //        第一次订阅 next(3333)
 //        第一次订阅 next(4444)

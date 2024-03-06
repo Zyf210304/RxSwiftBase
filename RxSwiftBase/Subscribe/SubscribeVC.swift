@@ -20,7 +20,7 @@ class SubscribeVC: BaseViewController {
         let _ = ob.subscribe { event in
             print(event.element ?? 0)
             }
-            .disposed(by: disposeBg)
+            .disposed(by: disposeBag)
         
         
         //这里要手动输入了

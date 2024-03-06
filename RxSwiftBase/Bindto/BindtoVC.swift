@@ -47,13 +47,13 @@ class BindtoVC: BaseViewController {
 //        obervable
 //            .map{"当前索引\($0)"}
 //            .bind(to: binderServer)
-//            .disposed(by: disposeBg)
+//            .disposed(by: disposeBag)
         
         
         obervable
             .map{"当前索引\($0)"}
             .bind(to: myLable.rx.text)
-            .disposed(by: disposeBg)
+            .disposed(by: disposeBag)
         
     }
 

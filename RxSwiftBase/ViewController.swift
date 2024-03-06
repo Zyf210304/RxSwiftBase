@@ -24,6 +24,8 @@ struct DataListModel {
         DataModel(className: ExtensionVC.self, name: "extensionUI"),
         DataModel(className: SubjectsVC.self, name: "subject"),
         DataModel(className: TransformingVC.self, name: "transforming"),
+        DataModel(className: UILabelVC.self, name: "uiLabel"),
+        DataModel(className: TextViewVC.self, name: "textView"),
     ])
 }
 

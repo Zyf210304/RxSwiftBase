@@ -26,6 +26,8 @@
 		022186272B982EB600FB02DA /* SubjectsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022186252B982EB600FB02DA /* SubjectsVC.swift */; };
 		022186282B982EB600FB02DA /* SubjectsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022186262B982EB600FB02DA /* SubjectsVC.xib */; };
 		0221862B2B9844D200FB02DA /* TransformingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221862A2B9844D200FB02DA /* TransformingVC.swift */; };
+		0221862E2B98582400FB02DA /* UILabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221862D2B98582400FB02DA /* UILabelVC.swift */; };
+		022186312B985BF800FB02DA /* TextViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022186302B985BF800FB02DA /* TextViewVC.swift */; };
 		0241C5AF2B9743300053992A /* PeopleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241C5AD2B9743300053992A /* PeopleVC.swift */; };
 		0241C5B02B9743300053992A /* PeopleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0241C5AE2B9743300053992A /* PeopleVC.xib */; };
 		0241C5B22B9744140053992A /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241C5B12B9744140053992A /* People.swift */; };
@@ -56,6 +58,8 @@
 		022186252B982EB600FB02DA /* SubjectsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsVC.swift; sourceTree = "<group>"; };
 		022186262B982EB600FB02DA /* SubjectsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubjectsVC.xib; sourceTree = "<group>"; };
 		0221862A2B9844D200FB02DA /* TransformingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformingVC.swift; sourceTree = "<group>"; };
+		0221862D2B98582400FB02DA /* UILabelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelVC.swift; sourceTree = "<group>"; };
+		022186302B985BF800FB02DA /* TextViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewVC.swift; sourceTree = "<group>"; };
 		0241C5AD2B9743300053992A /* PeopleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleVC.swift; sourceTree = "<group>"; };
 		0241C5AE2B9743300053992A /* PeopleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleVC.xib; sourceTree = "<group>"; };
 		0241C5B12B9744140053992A /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 		0217749F2B970E810050D517 /* RxSwiftBase */ = {
 			isa = PBXGroup;
 			children = (
+				0221862F2B985BE500FB02DA /* TextView */,
+				0221862C2B98580E00FB02DA /* UILabel */,
 				022186292B9844BE00FB02DA /* 变化操作符 */,
 				022186242B982EAB00FB02DA /* Subjects */,
 				0221861F2B98276F00FB02DA /* ui扩展 */,
@@ -179,6 +185,22 @@
 				0221862A2B9844D200FB02DA /* TransformingVC.swift */,
 			);
 			path = "变化操作符";
+			sourceTree = "<group>";
+		};
+		0221862C2B98580E00FB02DA /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				0221862D2B98582400FB02DA /* UILabelVC.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		0221862F2B985BE500FB02DA /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				022186302B985BF800FB02DA /* TextViewVC.swift */,
+			);
+			path = TextView;
 			sourceTree = "<group>";
 		};
 		0241C5AC2B9743060053992A /* table */ = {
@@ -339,6 +361,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				022186112B98086000FB02DA /* DoOnVC.swift in Sources */,
+				0221862E2B98582400FB02DA /* UILabelVC.swift in Sources */,
+				022186312B985BF800FB02DA /* TextViewVC.swift in Sources */,
 				022186272B982EB600FB02DA /* SubjectsVC.swift in Sources */,
 				021774A52B970E810050D517 /* ViewController.swift in Sources */,
 				0241C5B72B9758DD0053992A /* ObservableVC.swift in Sources */,

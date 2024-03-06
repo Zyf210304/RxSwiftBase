@@ -27,7 +27,7 @@ class ExtensionVC: BaseViewController {
 //            .bind(to: myLable.fontSize)
             //使用Rx的扩展
             .bind(to: myLable.rx.fontSize)
-            .disposed(by: disposeBg)
+            .disposed(by: disposeBag)
         
     }
 

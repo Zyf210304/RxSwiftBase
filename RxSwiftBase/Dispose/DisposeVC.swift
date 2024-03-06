@@ -23,7 +23,7 @@ class DisposeVC: BaseViewController {
             print(event)
         }
 //        自动释放
-            .disposed(by: disposeBg)
+            .disposed(by: disposeBag)
         
         //手动释放
 //        sub.dispose()
