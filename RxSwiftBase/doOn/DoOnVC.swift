@@ -1,5 +1,5 @@
 //
-//  SubscribeVC.swift
+//  DoOnVC.swift
 //  RxSwiftBase
 //
 //  Created by 张亚飞 on 2024/3/6.
@@ -8,32 +8,37 @@
 import UIKit
 import RxSwift
 import RxCocoa
-class SubscribeVC: BaseViewController {
 
+class DoOnVC: BaseViewController {
+
+    //doOn是用来监听时间的生命周期 它会在每次发送前被调用
+    //doOn 和 subscribe 是一样的
+    //do(onNext:) 会在 subsribe(onNext:)前调用
+    //do(onCompleted:) 会在 subsribe(onCompleted:)前调用
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
 
         // Do any additional setup after loading the view.
         
         let ob = Observable.of(1, 2, 3)
-        let _ = ob.subscribe { event in
-            print(event.element ?? 0)
-            }
-            .disposed(by: disposeBg)
         
-        
-        //这里要手动输入了
-        let _ = ob.subscribe(onNext: { event in
-            print(event)
+        let _ = ob.do(onNext: { event in
+            print("do-->",event)
         }, onCompleted: {
-            print("completed")
-        }, onDisposed: {
-            print("Disposed")
+            print("do-->","completed")
+        }, onDispose: {
+            print("do-->","Disposed")
         })
-    
+        .subscribe(onNext: { event in
+            print("subscribe-->",event)
+        }, onCompleted: {
+            print("subscribe-->","completed")
+        }, onDisposed: {
+            print("subscribe-->","Disposed")
+        })
+        
     }
-    
+
 
     /*
     // MARK: - Navigation

@@ -15,6 +15,10 @@
 		021774AD2B970E820050D517 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021774AB2B970E820050D517 /* LaunchScreen.storyboard */; };
 		0221860B2B97FF1200FB02DA /* SubscribeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221860A2B97FF1200FB02DA /* SubscribeVC.swift */; };
 		0221860D2B98058300FB02DA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221860C2B98058300FB02DA /* BaseViewController.swift */; };
+		022186112B98086000FB02DA /* DoOnVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221860F2B98086000FB02DA /* DoOnVC.swift */; };
+		022186122B98086000FB02DA /* DoOnVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022186102B98086000FB02DA /* DoOnVC.xib */; };
+		022186162B98107100FB02DA /* DisposeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022186142B98107100FB02DA /* DisposeVC.swift */; };
+		022186172B98107100FB02DA /* DisposeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022186152B98107100FB02DA /* DisposeVC.xib */; };
 		0241C5AF2B9743300053992A /* PeopleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241C5AD2B9743300053992A /* PeopleVC.swift */; };
 		0241C5B02B9743300053992A /* PeopleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0241C5AE2B9743300053992A /* PeopleVC.xib */; };
 		0241C5B22B9744140053992A /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241C5B12B9744140053992A /* People.swift */; };
@@ -34,6 +38,10 @@
 		021774AE2B970E820050D517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0221860A2B97FF1200FB02DA /* SubscribeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeVC.swift; sourceTree = "<group>"; };
 		0221860C2B98058300FB02DA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0221860F2B98086000FB02DA /* DoOnVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoOnVC.swift; sourceTree = "<group>"; };
+		022186102B98086000FB02DA /* DoOnVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoOnVC.xib; sourceTree = "<group>"; };
+		022186142B98107100FB02DA /* DisposeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposeVC.swift; sourceTree = "<group>"; };
+		022186152B98107100FB02DA /* DisposeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisposeVC.xib; sourceTree = "<group>"; };
 		0241C5AD2B9743300053992A /* PeopleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleVC.swift; sourceTree = "<group>"; };
 		0241C5AE2B9743300053992A /* PeopleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleVC.xib; sourceTree = "<group>"; };
 		0241C5B12B9744140053992A /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
@@ -77,6 +85,8 @@
 		0217749F2B970E810050D517 /* RxSwiftBase */ = {
 			isa = PBXGroup;
 			children = (
+				022186132B98105F00FB02DA /* Dispose */,
+				0221860E2B98084000FB02DA /* doOn */,
 				022186092B97FF0300FB02DA /* Subscribe */,
 				0241C5B52B9758550053992A /* Observable */,
 				0241C5AC2B9743060053992A /* table */,
@@ -98,6 +108,24 @@
 				0221860A2B97FF1200FB02DA /* SubscribeVC.swift */,
 			);
 			path = Subscribe;
+			sourceTree = "<group>";
+		};
+		0221860E2B98084000FB02DA /* doOn */ = {
+			isa = PBXGroup;
+			children = (
+				0221860F2B98086000FB02DA /* DoOnVC.swift */,
+				022186102B98086000FB02DA /* DoOnVC.xib */,
+			);
+			path = doOn;
+			sourceTree = "<group>";
+		};
+		022186132B98105F00FB02DA /* Dispose */ = {
+			isa = PBXGroup;
+			children = (
+				022186142B98107100FB02DA /* DisposeVC.swift */,
+				022186152B98107100FB02DA /* DisposeVC.xib */,
+			);
+			path = Dispose;
 			sourceTree = "<group>";
 		};
 		0241C5AC2B9743060053992A /* table */ = {
@@ -196,9 +224,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				022186122B98086000FB02DA /* DoOnVC.xib in Resources */,
 				021774AD2B970E820050D517 /* LaunchScreen.storyboard in Resources */,
 				021774AA2B970E820050D517 /* Assets.xcassets in Resources */,
 				021774A82B970E810050D517 /* Main.storyboard in Resources */,
+				022186172B98107100FB02DA /* DisposeVC.xib in Resources */,
 				0241C5B02B9743300053992A /* PeopleVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,9 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				022186112B98086000FB02DA /* DoOnVC.swift in Sources */,
 				021774A52B970E810050D517 /* ViewController.swift in Sources */,
 				0241C5B72B9758DD0053992A /* ObservableVC.swift in Sources */,
 				0241C5B42B9744540053992A /* PeopleViewModel.swift in Sources */,
+				022186162B98107100FB02DA /* DisposeVC.swift in Sources */,
 				021774A12B970E810050D517 /* AppDelegate.swift in Sources */,
 				021774A32B970E810050D517 /* SceneDelegate.swift in Sources */,
 				0221860D2B98058300FB02DA /* BaseViewController.swift in Sources */,

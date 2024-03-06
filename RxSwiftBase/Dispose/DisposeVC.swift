@@ -1,5 +1,5 @@
 //
-//  SubscribeVC.swift
+//  DisposeVC.swift
 //  RxSwiftBase
 //
 //  Created by 张亚飞 on 2024/3/6.
@@ -8,32 +8,26 @@
 import UIKit
 import RxSwift
 import RxCocoa
-class SubscribeVC: BaseViewController {
+
+class DisposeVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
 
         // Do any additional setup after loading the view.
         
-        let ob = Observable.of(1, 2, 3)
-        let _ = ob.subscribe { event in
-            print(event.element ?? 0)
-            }
+        let ob = Observable.of(1, 2, 4)
+        let sub = ob.subscribe { event in
+            print(event)
+        }
+//        自动释放
             .disposed(by: disposeBg)
         
+        //手动释放
+//        sub.dispose()
         
-        //这里要手动输入了
-        let _ = ob.subscribe(onNext: { event in
-            print(event)
-        }, onCompleted: {
-            print("completed")
-        }, onDisposed: {
-            print("Disposed")
-        })
-    
     }
-    
+
 
     /*
     // MARK: - Navigation
