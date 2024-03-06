@@ -1,0 +1,39 @@
+//
+//  SubscribeVC.swift
+//  RxSwiftBase
+//
+//  Created by 张亚飞 on 2024/3/6.
+//
+
+import UIKit
+import RxSwift
+import RxCocoa
+class SubscribeVC: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = .white
+
+        // Do any additional setup after loading the view.
+        
+        let ob = Observable.of(1, 2, 3)
+        let _ = ob.subscribe { event in
+            print(event.element ?? 0)
+        }
+        
+        
+    
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

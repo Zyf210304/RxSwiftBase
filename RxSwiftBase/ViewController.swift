@@ -16,7 +16,9 @@ struct DataModel {
 
 struct DataListModel {
     let data = Observable.just([
-        DataModel(className: PeopleVC.self, name: "tableView")
+        DataModel(className: PeopleVC.self, name: "tableView"),
+        DataModel(className: ObservableVC.self, name: "Observable"),
+        DataModel(className: SubscribeVC.self, name: "subscribe")
     ])
 }
 

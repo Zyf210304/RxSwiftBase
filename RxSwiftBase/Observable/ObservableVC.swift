@@ -16,9 +16,12 @@ enum myError: Error {
 
 class ObservableVC: UIViewController {
 
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = .white
+        
         // Do any additional setup after loading the view.
         
         //just() 需要一个初始值
@@ -86,20 +89,23 @@ class ObservableVC: UIViewController {
         //interval() 每隔一段时间，发出一个索引数
         let ob = Observable<Int>.interval(RxTimeInterval.seconds(1), scheduler: MainScheduler.instance)
         ob.subscribe {event in
-            print(event)
+            print("ob-->",event)
         }
+        .disposed(by: disposeBag)
         
         //timer() 创建一个经过设定的一段时间后 产生唯一的元素
         let ob2 = Observable<Int>.timer(RxTimeInterval.seconds(5), scheduler: MainScheduler.instance)
         ob2.subscribe {event in
             print("ob2--->",event)
         }
+        .disposed(by: disposeBag)
+        
         
         
         
         //第二种 就是经过设定一段时间 每隔一段时间产生一个元素
         //第一个参数就是等待5秒 第二个参数为每一秒产生一个元素
-        let ob3 = Observable<Int>.timer(RxTimeInterval.seconds(5), period: RxTimeInterval.seconds(1), scheduler: MainScheduler.instance)
+//        let ob3 = Observable<Int>.timer(RxTimeInterval.seconds(5), period: RxTimeInterval.seconds(1), scheduler: MainScheduler.instance)
         
         
         

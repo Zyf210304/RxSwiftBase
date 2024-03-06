@@ -13,6 +13,8 @@
 		021774A82B970E810050D517 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021774A62B970E810050D517 /* Main.storyboard */; };
 		021774AA2B970E820050D517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021774A92B970E820050D517 /* Assets.xcassets */; };
 		021774AD2B970E820050D517 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021774AB2B970E820050D517 /* LaunchScreen.storyboard */; };
+		0221860B2B97FF1200FB02DA /* SubscribeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221860A2B97FF1200FB02DA /* SubscribeVC.swift */; };
+		0221860D2B98058300FB02DA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221860C2B98058300FB02DA /* BaseViewController.swift */; };
 		0241C5AF2B9743300053992A /* PeopleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241C5AD2B9743300053992A /* PeopleVC.swift */; };
 		0241C5B02B9743300053992A /* PeopleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0241C5AE2B9743300053992A /* PeopleVC.xib */; };
 		0241C5B22B9744140053992A /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241C5B12B9744140053992A /* People.swift */; };
@@ -30,6 +32,8 @@
 		021774A92B970E820050D517 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		021774AC2B970E820050D517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		021774AE2B970E820050D517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0221860A2B97FF1200FB02DA /* SubscribeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeVC.swift; sourceTree = "<group>"; };
+		0221860C2B98058300FB02DA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0241C5AD2B9743300053992A /* PeopleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleVC.swift; sourceTree = "<group>"; };
 		0241C5AE2B9743300053992A /* PeopleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleVC.xib; sourceTree = "<group>"; };
 		0241C5B12B9744140053992A /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
@@ -73,17 +77,27 @@
 		0217749F2B970E810050D517 /* RxSwiftBase */ = {
 			isa = PBXGroup;
 			children = (
+				022186092B97FF0300FB02DA /* Subscribe */,
 				0241C5B52B9758550053992A /* Observable */,
 				0241C5AC2B9743060053992A /* table */,
 				021774A02B970E810050D517 /* AppDelegate.swift */,
 				021774A22B970E810050D517 /* SceneDelegate.swift */,
 				021774A42B970E810050D517 /* ViewController.swift */,
+				0221860C2B98058300FB02DA /* BaseViewController.swift */,
 				021774A62B970E810050D517 /* Main.storyboard */,
 				021774A92B970E820050D517 /* Assets.xcassets */,
 				021774AB2B970E820050D517 /* LaunchScreen.storyboard */,
 				021774AE2B970E820050D517 /* Info.plist */,
 			);
 			path = RxSwiftBase;
+			sourceTree = "<group>";
+		};
+		022186092B97FF0300FB02DA /* Subscribe */ = {
+			isa = PBXGroup;
+			children = (
+				0221860A2B97FF1200FB02DA /* SubscribeVC.swift */,
+			);
+			path = Subscribe;
 			sourceTree = "<group>";
 		};
 		0241C5AC2B9743060053992A /* table */ = {
@@ -243,8 +257,10 @@
 				0241C5B42B9744540053992A /* PeopleViewModel.swift in Sources */,
 				021774A12B970E810050D517 /* AppDelegate.swift in Sources */,
 				021774A32B970E810050D517 /* SceneDelegate.swift in Sources */,
+				0221860D2B98058300FB02DA /* BaseViewController.swift in Sources */,
 				0241C5AF2B9743300053992A /* PeopleVC.swift in Sources */,
 				0241C5B22B9744140053992A /* People.swift in Sources */,
+				0221860B2B97FF1200FB02DA /* SubscribeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
