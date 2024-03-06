@@ -20,6 +20,10 @@ struct DataListModel {
         DataModel(className: ObservableVC.self, name: "Observable"),
         DataModel(className: SubscribeVC.self, name: "subscribe"),
         DataModel(className: DoOnVC.self, name: "doOn"),
+        DataModel(className: BindtoVC.self, name: "bindto"),
+        DataModel(className: ExtensionVC.self, name: "extensionUI"),
+        DataModel(className: SubjectsVC.self, name: "subject"),
+        DataModel(className: TransformingVC.self, name: "transforming"),
     ])
 }
 

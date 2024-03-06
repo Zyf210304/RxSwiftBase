@@ -19,6 +19,13 @@
 		022186122B98086000FB02DA /* DoOnVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022186102B98086000FB02DA /* DoOnVC.xib */; };
 		022186162B98107100FB02DA /* DisposeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022186142B98107100FB02DA /* DisposeVC.swift */; };
 		022186172B98107100FB02DA /* DisposeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022186152B98107100FB02DA /* DisposeVC.xib */; };
+		0221861D2B98155000FB02DA /* BindtoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221861B2B98155000FB02DA /* BindtoVC.swift */; };
+		0221861E2B98155000FB02DA /* BindtoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0221861C2B98155000FB02DA /* BindtoVC.xib */; };
+		022186222B98279400FB02DA /* ExtensionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022186202B98279400FB02DA /* ExtensionVC.swift */; };
+		022186232B98279400FB02DA /* ExtensionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022186212B98279400FB02DA /* ExtensionVC.xib */; };
+		022186272B982EB600FB02DA /* SubjectsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022186252B982EB600FB02DA /* SubjectsVC.swift */; };
+		022186282B982EB600FB02DA /* SubjectsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022186262B982EB600FB02DA /* SubjectsVC.xib */; };
+		0221862B2B9844D200FB02DA /* TransformingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221862A2B9844D200FB02DA /* TransformingVC.swift */; };
 		0241C5AF2B9743300053992A /* PeopleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241C5AD2B9743300053992A /* PeopleVC.swift */; };
 		0241C5B02B9743300053992A /* PeopleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0241C5AE2B9743300053992A /* PeopleVC.xib */; };
 		0241C5B22B9744140053992A /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241C5B12B9744140053992A /* People.swift */; };
@@ -42,6 +49,13 @@
 		022186102B98086000FB02DA /* DoOnVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoOnVC.xib; sourceTree = "<group>"; };
 		022186142B98107100FB02DA /* DisposeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposeVC.swift; sourceTree = "<group>"; };
 		022186152B98107100FB02DA /* DisposeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisposeVC.xib; sourceTree = "<group>"; };
+		0221861B2B98155000FB02DA /* BindtoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindtoVC.swift; sourceTree = "<group>"; };
+		0221861C2B98155000FB02DA /* BindtoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BindtoVC.xib; sourceTree = "<group>"; };
+		022186202B98279400FB02DA /* ExtensionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionVC.swift; sourceTree = "<group>"; };
+		022186212B98279400FB02DA /* ExtensionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExtensionVC.xib; sourceTree = "<group>"; };
+		022186252B982EB600FB02DA /* SubjectsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsVC.swift; sourceTree = "<group>"; };
+		022186262B982EB600FB02DA /* SubjectsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubjectsVC.xib; sourceTree = "<group>"; };
+		0221862A2B9844D200FB02DA /* TransformingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformingVC.swift; sourceTree = "<group>"; };
 		0241C5AD2B9743300053992A /* PeopleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleVC.swift; sourceTree = "<group>"; };
 		0241C5AE2B9743300053992A /* PeopleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleVC.xib; sourceTree = "<group>"; };
 		0241C5B12B9744140053992A /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
@@ -85,6 +99,10 @@
 		0217749F2B970E810050D517 /* RxSwiftBase */ = {
 			isa = PBXGroup;
 			children = (
+				022186292B9844BE00FB02DA /* 变化操作符 */,
+				022186242B982EAB00FB02DA /* Subjects */,
+				0221861F2B98276F00FB02DA /* ui扩展 */,
+				022186182B98152C00FB02DA /* Bindto */,
 				022186132B98105F00FB02DA /* Dispose */,
 				0221860E2B98084000FB02DA /* doOn */,
 				022186092B97FF0300FB02DA /* Subscribe */,
@@ -126,6 +144,41 @@
 				022186152B98107100FB02DA /* DisposeVC.xib */,
 			);
 			path = Dispose;
+			sourceTree = "<group>";
+		};
+		022186182B98152C00FB02DA /* Bindto */ = {
+			isa = PBXGroup;
+			children = (
+				0221861B2B98155000FB02DA /* BindtoVC.swift */,
+				0221861C2B98155000FB02DA /* BindtoVC.xib */,
+			);
+			path = Bindto;
+			sourceTree = "<group>";
+		};
+		0221861F2B98276F00FB02DA /* ui扩展 */ = {
+			isa = PBXGroup;
+			children = (
+				022186202B98279400FB02DA /* ExtensionVC.swift */,
+				022186212B98279400FB02DA /* ExtensionVC.xib */,
+			);
+			path = "ui扩展";
+			sourceTree = "<group>";
+		};
+		022186242B982EAB00FB02DA /* Subjects */ = {
+			isa = PBXGroup;
+			children = (
+				022186252B982EB600FB02DA /* SubjectsVC.swift */,
+				022186262B982EB600FB02DA /* SubjectsVC.xib */,
+			);
+			path = Subjects;
+			sourceTree = "<group>";
+		};
+		022186292B9844BE00FB02DA /* 变化操作符 */ = {
+			isa = PBXGroup;
+			children = (
+				0221862A2B9844D200FB02DA /* TransformingVC.swift */,
+			);
+			path = "变化操作符";
 			sourceTree = "<group>";
 		};
 		0241C5AC2B9743060053992A /* table */ = {
@@ -226,9 +279,12 @@
 			files = (
 				022186122B98086000FB02DA /* DoOnVC.xib in Resources */,
 				021774AD2B970E820050D517 /* LaunchScreen.storyboard in Resources */,
+				022186282B982EB600FB02DA /* SubjectsVC.xib in Resources */,
 				021774AA2B970E820050D517 /* Assets.xcassets in Resources */,
 				021774A82B970E810050D517 /* Main.storyboard in Resources */,
 				022186172B98107100FB02DA /* DisposeVC.xib in Resources */,
+				0221861E2B98155000FB02DA /* BindtoVC.xib in Resources */,
+				022186232B98279400FB02DA /* ExtensionVC.xib in Resources */,
 				0241C5B02B9743300053992A /* PeopleVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,16 +339,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				022186112B98086000FB02DA /* DoOnVC.swift in Sources */,
+				022186272B982EB600FB02DA /* SubjectsVC.swift in Sources */,
 				021774A52B970E810050D517 /* ViewController.swift in Sources */,
 				0241C5B72B9758DD0053992A /* ObservableVC.swift in Sources */,
 				0241C5B42B9744540053992A /* PeopleViewModel.swift in Sources */,
 				022186162B98107100FB02DA /* DisposeVC.swift in Sources */,
 				021774A12B970E810050D517 /* AppDelegate.swift in Sources */,
+				0221861D2B98155000FB02DA /* BindtoVC.swift in Sources */,
 				021774A32B970E810050D517 /* SceneDelegate.swift in Sources */,
 				0221860D2B98058300FB02DA /* BaseViewController.swift in Sources */,
 				0241C5AF2B9743300053992A /* PeopleVC.swift in Sources */,
+				0221862B2B9844D200FB02DA /* TransformingVC.swift in Sources */,
 				0241C5B22B9744140053992A /* People.swift in Sources */,
 				0221860B2B97FF1200FB02DA /* SubscribeVC.swift in Sources */,
+				022186222B98279400FB02DA /* ExtensionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

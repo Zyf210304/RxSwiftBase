@@ -11,6 +11,8 @@ import RxCocoa
 
 class DisposeVC: BaseViewController {
 
+    @IBOutlet weak var myLable: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
